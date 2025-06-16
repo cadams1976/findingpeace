@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Peace in the Silence - Free Prayer Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .hook {
+            background: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .hook h2 {
+            color: #742a2a;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: normal;
+        }
+        
+        .hook p {
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+        
+        .pain-points {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .pain-points h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .pain-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pain-points li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #4a5568;
+        }
+        
+        .pain-points li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .author-story {
+            background: #f0fff4;
+            border: 2px solid #9ae6b4;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .author-story h3 {
+            color: #22543d;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .author-story p {
+            color: #2f855a;
+            line-height: 1.7;
+            font-style: italic;
+        }
+        
+        .solution {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .solution h2 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .solution p {
+            color: #4a5568;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .preview {
+            background: #fff5f5;
+            border: 2px solid #fed7d7;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .preview h3 {
+            color: #742a2a;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .preview-content {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        
+        .preview-list {
+            margin-top: 15px;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .preview-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .preview-list li:before {
+            content: "🙏";
+            position: absolute;
+            left: 0;
+        }
+        
+        .form-container {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .form-container h3 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4a5568;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .cta-button {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .coming-soon {
+            background: #f0fff4;
+            border: 2px solid #9ae6b4;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .coming-soon h3 {
+            color: #22543d;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .coming-soon p {
+            color: #2f855a;
+            line-height: 1.6;
+        }
+        
+        .trust-signals {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .trust-signals p {
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        .quote-callout {
+            background: #edf2f7;
+            border-left: 4px solid #4a5568;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #2d3748;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Finding Peace in the Silence</h1>
+            <p>For parents who've done the hard work but still face estrangement</p>
+        </div>
+        
+        <div class="content">
+            <div class="hook">
+                <h2>You've confronted your past. You've done the healing work. So why is your adult child still silent?</h2>
+                <p>If you're a parent who has faced your own childhood trauma, worked through your wounds, and strived to be different from who you once were—yet still find yourself navigating the painful silence of estrangement—this message is specifically for you.</p>
+            </div>
+            
+            <div class="pain-points">
+                <h3>You may be carrying burdens that others don't see:</h3>
+                <ul>
+                    <li>You've done extensive therapy and personal growth work</li>
+                    <li>You've apologized for your past mistakes and patterns</li>
+                    <li>You've broken generational cycles and become a different person</li>
+                    <li>You've tried everything "experts" suggest, yet silence remains</li>
+                    <li>You're isolated because your journey is too complex for simple advice</li>
+                    <li>You feel like you're being punished for a past version of yourself</li>
+                </ul>
+            </div>
+            
+            <div class="author-story">
+                <h3>Written by Someone Who Understands</h3>
+                <p>"This devotional was written from a place of deep empathy, by a parent who walks a similar path. It's particularly for those who may have experienced profound childhood trauma or navigated life from a single-parent home. You carry burdens that others might not see, and your journey has unique complexities."</p>
+            </div>
+            
+            <div class="quote-callout">
+                "Please know this: it's not your fault. This study aims to help you find peace in the silence, to understand that sometimes, even after all possible efforts to change and grow, hard realities still exist."
+            </div>
+            
+            <div class="solution">
+                <h2>You Need More Than Generic Advice</h2>
+                <p>Most estrangement resources don't address the unique pain of parents who have genuinely transformed their lives yet still face rejection. You need biblical wisdom that speaks to your specific situation—the heartbreak of doing everything "right" and still experiencing silence.</p>
+            </div>
+            
+            <div class="preview">
+                <h3>Get Your Free "5 Prayers for Parents Who've Done the Work" Guide</h3>
+                <div class="preview-content">
+                    These prayers are specifically written for parents like you—those who have faced their past, done the healing work, and still find themselves in the painful space of estrangement. Each prayer addresses what you're really struggling with:
+                </div>
+                <ul class="preview-list">
+                    <li>A prayer for when your growth feels invisible to your child</li>
+                    <li>A prayer for releasing the burden of an unchanged past</li>
+                    <li>A prayer for your adult child's healing journey</li>
+                    <li>A prayer for wisdom when "trying harder" isn't the answer</li>
+                    <li>A prayer for peace when you've done all you can do</li>
+                </ul>
+            </div>
+            
+            <div class="form-container">
+                <h3>Download Your Free Prayer Guide Now</h3>
+                <form id="emailForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">
+                        Send Me These Prayers
+                    </button>
+                </form>
+            </div>
+            
+            <div class="coming-soon">
+                <h3>Coming Soon: "Finding Peace in the Silence"</h3>
+                <p>A 30-day biblical devotional specifically for parents who have done the hard work of healing from their own trauma but still face the complex reality of adult child estrangement. This isn't generic advice—it's a compassionate guide for your unique journey.</p>
+            </div>
+            
+            <div class="trust-signals">
+                <p>✓ No spam ever ✓ Unsubscribe anytime ✓ Your email stays private</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const email = document.getElementById('email').value;
+            
+            alert(`Thank you, ${firstName}! Your prayer guide will be sent to ${email}. Please check your inbox (and spam folder) in the next few minutes.`);
+            
+            document.getElementById('emailForm').reset();
+        }
+    </script>
+</body>
+</html>
